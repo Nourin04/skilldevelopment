@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Roadmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #E0FFFF, #B0E0E6);
+            font-family: Arial, sans-serif;
+            color: #0A2E59;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #4682B4;
+            color: white;
+        }
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        .roadmap-step {
+            background-color: #FFF5EE;
+            border: 2px solid #FFB6C1;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .roadmap-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
+        }
+        .roadmap-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #4682B4;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Cybersecurity Roadmap</h1>
+        <p>Your path to securing digital environments!</p>
+    </header>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h5>Networking Fundamentals</h5>
+            <p>Understand the basics of networking.</p>
+            <a href="https://www.networkworld.com/article/2616318/networking-101.html" target="_blank">Networking 101</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Operating Systems</h5>
+            <p>Get familiar with Windows and Linux environments.</p>
+            <a href="https://www.linux.org/learning/learning.html" target="_blank">Linux Learning</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Security Concepts</h5>
+            <p>Learn about cryptography, firewalls, and security protocols.</p>
+            <a href="https://www.cyber.gov.au/acsc/view-all-content/advice/what-cyber-security" target="_blank">Cyber Security Basics</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Ethical Hacking</h5>
+            <p>Understand the techniques used by ethical hackers.</p>
+            <a href="https://www.udemy.com/course/ethical-hacking-course/" target="_blank">Ethical Hacking Course</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Incident Response</h5>
+            <p>Learn how to respond to security incidents.</p>
+            <a href="https://www.sans.org/information-security-training-resources/information-security-resources/incident-response/" target="_blank">Incident Response</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Compliance and Regulations</h5>
+            <p>Understand security regulations like GDPR and HIPAA.</p>
+            <a href="https://www.dataprotection.ie/en/what-we-do/regulations" target="_blank">Data Protection Regulations</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Capstone Project</h5>
+            <p>Conduct a security assessment for a case study.</p>
+            <a href="https://www.owasp.org/index.php/Main_Page" target="_blank">OWASP Resources</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skills Bridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>

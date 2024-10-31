@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design Roadmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #87CEFA, #E0FFFF);
+            font-family: Arial, sans-serif;
+            color: #0A2E59;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #4682B4;
+            color: white;
+        }
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        .roadmap-step {
+            background-color: #F0F8FF;
+            border: 2px solid #B0E0E6;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 139, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .roadmap-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 139, 0.2);
+        }
+        .roadmap-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #4682B4;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .cloud {
+            position: absolute;
+            background: #E0FFFF;
+            width: 150px;
+            height: 60px;
+            border-radius: 50px;
+            opacity: 0.7;
+            animation: moveClouds 15s linear infinite;
+        }
+        .cloud::before, .cloud::after {
+            content: '';
+            position: absolute;
+            background: #E0FFFF;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            top: -20px;
+            left: 10px;
+        }
+        .cloud::after {
+            width: 70px;
+            height: 70px;
+            top: 0;
+            left: auto;
+            right: 10px;
+        }
+        .cloud1 {
+            top: 10%;
+            left: -20%;
+            animation-delay: 0s;
+        }
+        .cloud2 {
+            top: 30%;
+            left: 80%;
+            animation-delay: 5s;
+        }
+        .cloud3 {
+            top: 60%;
+            left: -25%;
+            animation-delay: 10s;
+        }
+        @keyframes moveClouds {
+            0% { transform: translateX(-50px); }
+            100% { transform: translateX(100vw); }
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>UI/UX Design Roadmap</h1>
+        <p>Embark on your journey to becoming a UI/UX designer!</p>
+    </header>
+
+    <!-- Animated Clouds -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h5>Understanding Design Principles</h5>
+            <p>Learn about visual hierarchy, balance, and alignment.</p>
+            <a href="https://www.smashingmagazine.com/2018/01/design-principles/" target="_blank">Smashing Magazine</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>User Research</h5>
+            <p>Gather insights through surveys and user interviews.</p>
+            <a href="https://www.usability.gov/how-to-and-tools/methods/user-research.html" target="_blank">Usability.gov</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Wireframing</h5>
+            <p>Create low-fidelity wireframes for layout design.</p>
+            <a href="https://www.creativebloq.com/advice/the-best-wireframing-tools" target="_blank">Creative Bloq</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Prototyping</h5>
+            <p>Build interactive prototypes to validate design concepts.</p>
+            <a href="https://www.invisionapp.com/inside-design/guide-to-prototyping/" target="_blank">InVision</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Usability Testing</h5>
+            <p>Test designs with real users to gather feedback.</p>
+            <a href="https://www.nngroup.com/articles/usability-testing-101/" target="_blank">Nielsen Norman Group</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>UI Design Tools</h5>
+            <p>Familiarize yourself with tools like Figma and Adobe XD.</p>
+            <a href="https://www.toptal.com/designers/ui/ui-design-tools" target="_blank">Toptal</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Responsive Design</h5>
+            <p>Learn how to create designs that work on different devices.</p>
+            <a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/" target="_blank">Smashing Magazine</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Final Portfolio</h5>
+            <p>Compile your best works into a professional portfolio.</p>
+            <a href="https://www.creativebloq.com/inspiration/how-to-create-a-portfolio" target="_blank">Creative Bloq</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skills Bridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>

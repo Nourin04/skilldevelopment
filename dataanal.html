@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis Roadmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #FFFACD, #F0E68C);
+            font-family: Arial, sans-serif;
+            color: #0A2E59;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #4682B4;
+            color: white;
+        }
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        .roadmap-step {
+            background-color: #FFF5EE;
+            border: 2px solid #FFB6C1;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .roadmap-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
+        }
+        .roadmap-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #4682B4;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Data Analysis Roadmap</h1>
+        <p>Your guide to becoming a data analyst!</p>
+    </header>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h5>Excel Basics</h5>
+            <p>Learn spreadsheet basics and functions.</p>
+            <a href="https://www.excel-easy.com/" target="_blank">Excel Easy</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Data Visualization</h5>
+            <p>Explore tools like Tableau and Power BI.</p>
+            <a href="https://www.tableau.com/learn/training" target="_blank">Tableau Training</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Statistics</h5>
+            <p>Understand key statistical concepts.</p>
+            <a href="https://www.khanacademy.org/math/statistics-probability" target="_blank">Khan Academy</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Data Cleaning</h5>
+            <p>Learn techniques to clean and prepare data.</p>
+            <a href="https://towardsdatascience.com/a-comprehensive-guide-to-data-cleaning-in-python-fc3d88a3c674" target="_blank">Towards Data Science</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>SQL Basics</h5>
+            <p>Learn SQL for data retrieval and manipulation.</p>
+            <a href="https://www.w3schools.com/sql/" target="_blank">W3Schools SQL</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Data Analysis Projects</h5>
+            <p>Apply your skills on real-world data analysis projects.</p>
+            <a href="https://www.kaggle.com/" target="_blank">Kaggle</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skills Bridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>

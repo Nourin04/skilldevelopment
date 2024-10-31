@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter App Development Roadmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #E6E6FA, #DDA0DD);
+            font-family: Arial, sans-serif;
+            color: #0A2E59;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #4682B4;
+            color: white;
+        }
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        .roadmap-step {
+            background-color: #FFF5EE;
+            border: 2px solid #FFB6C1;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .roadmap-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
+        }
+        .roadmap-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #4682B4;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Flutter App Development Roadmap</h1>
+        <p>Your journey to mastering Flutter!</p>
+    </header>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h5>Dart Basics</h5>
+            <p>Learn the fundamentals of Dart programming.</p>
+            <a href="https://dart.dev/tutorials" target="_blank">Dart Tutorials</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Flutter Fundamentals</h5>
+            <p>Understand Flutter widgets and layout.</p>
+            <a href="https://flutter.dev/docs/development/ui/widgets-intro" target="_blank">Flutter Widgets</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>State Management</h5>
+            <p>Learn about state management solutions.</p>
+            <a href="https://flutter.dev/docs/development/data-and-backend/state-mgmt/intro" target="_blank">State Management</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Networking</h5>
+            <p>Work with APIs and data fetching.</p>
+            <a href="https://flutter.dev/docs/cookbook/networking/fetch-data" target="_blank">Flutter Networking</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Database Integration</h5>
+            <p>Learn how to integrate with local databases.</p>
+            <a href="https://flutter.dev/docs/cookbook/persistence/sqlite" target="_blank">SQLite with Flutter</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Publishing Apps</h5>
+            <p>Understand the process of publishing your app.</p>
+            <a href="https://flutter.dev/docs/deployment" target="_blank">App Deployment</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Capstone Project</h5>
+            <p>Create a complete app to showcase your skills.</p>
+            <a href="https://flutter.dev/docs/get-started/codelab" target="_blank">Flutter Codelabs</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skills Bridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>

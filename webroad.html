@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technologies Roadmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #87CEFA, #E0FFFF);
+            font-family: Arial, sans-serif;
+            color: #0A2E59;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #4682B4;
+            color: white;
+        }
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        .roadmap-step {
+            background-color: #F0F8FF;
+            border: 2px solid #B0E0E6;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 139, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .roadmap-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 139, 0.2);
+        }
+        .roadmap-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #4682B4;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .cloud {
+            position: absolute;
+            background: #E0FFFF;
+            width: 150px;
+            height: 60px;
+            border-radius: 50px;
+            opacity: 0.7;
+            animation: moveClouds 15s linear infinite;
+        }
+        .cloud::before, .cloud::after {
+            content: '';
+            position: absolute;
+            background: #E0FFFF;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            top: -20px;
+            left: 10px;
+        }
+        .cloud::after {
+            width: 70px;
+            height: 70px;
+            top: 0;
+            left: auto;
+            right: 10px;
+        }
+        .cloud1 {
+            top: 10%;
+            left: -20%;
+            animation-delay: 0s;
+        }
+        .cloud2 {
+            top: 30%;
+            left: 80%;
+            animation-delay: 5s;
+        }
+        .cloud3 {
+            top: 60%;
+            left: -25%;
+            animation-delay: 10s;
+        }
+        @keyframes moveClouds {
+            0% { transform: translateX(-50px); }
+            100% { transform: translateX(100vw); }
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Web Technologies Roadmap</h1>
+        <p>Your guide to mastering web development!</p>
+    </header>
+
+    <!-- Animated Clouds -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h5>HTML & CSS</h5>
+            <p>Learn the basics of web structure and styling.</p>
+            <a href="https://www.w3schools.com/html/" target="_blank">W3 Schools</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>JavaScript</h5>
+            <p>Understand how to add interactivity to web pages.</p>
+            <a href="https://www.javascript.com/" target="_blank">JavaScript.com</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Responsive Design</h5>
+            <p>Learn how to make your web applications mobile-friendly.</p>
+            <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">FreeCodeCamp</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Version Control with Git</h5>
+            <p>Manage your code with version control systems.</p>
+            <a href="https://git-scm.com/doc" target="_blank">Git Documentation</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Frontend Frameworks</h5>
+            <p>Learn frameworks like React or Angular for building UIs.</p>
+            <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">React Tutorial</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Backend Development</h5>
+            <p>Understand server-side programming with Node.js or PHP.</p>
+            <a href="https://nodejs.dev/learn" target="_blank">Node.js Guide</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>APIs and Web Services</h5>
+            <p>Learn how to create and consume APIs.</p>
+            <a href="https://www.smashingmagazine.com/2020/06/rest-api-design-best-practices/" target="_blank">Smashing Magazine</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Deployment</h5>
+            <p>Deploy your web applications using platforms like Heroku.</p>
+            <a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs" target="_blank">Heroku Guide</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skills Bridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing & Programming Roadmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #F0F8FF, #E6E6FA);
+            font-family: Arial, sans-serif;
+            color: #0A2E59;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #4682B4;
+            color: white;
+        }
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        .roadmap-step {
+            background-color: #FFF5EE;
+            border: 2px solid #ADD8E6;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .roadmap-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
+        }
+        .roadmap-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #4682B4;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Cloud Computing & Programming Roadmap</h1>
+        <p>Your guide to mastering cloud technologies and programming!</p>
+    </header>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h5>Programming Basics</h5>
+            <p>Learn the fundamentals of programming.</p>
+            <a href="https://www.codecademy.com/catalog/subject/all" target="_blank">Codecademy Courses</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Data Structures</h5>
+            <p>Understand basic data structures like arrays and lists.</p>
+            <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">GeeksforGeeks DS</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Cloud Fundamentals</h5>
+            <p>Get acquainted with cloud computing concepts.</p>
+            <a href="https://aws.amazon.com/training/cloud-fundamentals/" target="_blank">AWS Cloud Fundamentals</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Virtualization</h5>
+            <p>Learn about virtualization technologies.</p>
+            <a href="https://www.vmware.com/topics/what-is-virtualization.html" target="_blank">What is Virtualization?</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Cloud Service Models</h5>
+            <p>Explore IaaS, PaaS, and SaaS models.</p>
+            <a href="https://www.ibm.com/cloud/learn/iaas-paas-saas" target="_blank">IaaS, PaaS, SaaS</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Cloud Security</h5>
+            <p>Understand security best practices in the cloud.</p>
+            <a href="https://cloudsecurityalliance.org/initiatives/cloud-controls-matrix/" target="_blank">Cloud Security Alliance</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Capstone Project</h5>
+            <p>Build a cloud-based application that utilizes your programming skills.</p>
+            <a href="https://www.heroku.com/learn" target="_blank">Heroku Learning</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skills Bridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>

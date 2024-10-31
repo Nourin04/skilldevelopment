@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Roadmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #FFFACD, #F0E68C);
+            font-family: Arial, sans-serif;
+            color: #0A2E59;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #4682B4;
+            color: white;
+        }
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        .roadmap-step {
+            background-color: #FFF5EE;
+            border: 2px solid #FFB6C1;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .roadmap-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
+        }
+        .roadmap-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #4682B4;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .cloud {
+            position: absolute;
+            background: #FFF5EE;
+            width: 150px;
+            height: 60px;
+            border-radius: 50px;
+            opacity: 0.7;
+            animation: moveClouds 15s linear infinite;
+        }
+        .cloud::before, .cloud::after {
+            content: '';
+            position: absolute;
+            background: #FFF5EE;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            top: -20px;
+            left: 10px;
+        }
+        .cloud::after {
+            width: 70px;
+            height: 70px;
+            top: 0;
+            left: auto;
+            right: 10px;
+        }
+        .cloud1 {
+            top: 10%;
+            left: -20%;
+            animation-delay: 0s;
+        }
+        .cloud2 {
+            top: 30%;
+            left: 80%;
+            animation-delay: 5s;
+        }
+        .cloud3 {
+            top: 60%;
+            left: -25%;
+            animation-delay: 10s;
+        }
+        @keyframes moveClouds {
+            0% { transform: translateX(-50px); }
+            100% { transform: translateX(100vw); }
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Machine Learning Roadmap</h1>
+        <p>Your path to mastering machine learning!</p>
+    </header>
+
+    <!-- Animated Clouds -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h5>Mathematics for ML</h5>
+            <p>Brush up on linear algebra, calculus, and probability.</p>
+            <a href="https://www.khanacademy.org/math" target="_blank">Khan Academy</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Python for Data Science</h5>
+            <p>Learn Python basics and libraries like NumPy and Pandas.</p>
+            <a href="https://www.learnpython.org/" target="_blank">LearnPython</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Data Preprocessing</h5>
+            <p>Learn how to clean and prepare data for modeling.</p>
+            <a href="https://towardsdatascience.com/data-preprocessing-techniques-in-machine-learning-with-python-1c1f4178b6b6" target="_blank">Towards Data Science</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Supervised Learning</h5>
+            <p>Understand concepts like regression and classification.</p>
+            <a href="https://www.coursera.org/learn/machine-learning" target="_blank">Coursera</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Unsupervised Learning</h5>
+            <p>Dive into clustering and association algorithms.</p>
+            <a href="https://towardsdatascience.com/a-quick-guide-to-unsupervised-learning-742f87e74864" target="_blank">Towards Data Science</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Model Evaluation</h5>
+            <p>Learn about metrics like accuracy, precision, and recall.</p>
+            <a href="https://towardsdatascience.com/model-evaluation-in-machine-learning-6f56d44a1c4f" target="_blank">Towards Data Science</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Deep Learning</h5>
+            <p>Explore neural networks and frameworks like TensorFlow.</p>
+            <a href="https://www.tensorflow.org/learn" target="_blank">TensorFlow</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Projects and Practice</h5>
+            <p>Build projects to solidify your learning and gain experience.</p>
+            <a href="https://www.kaggle.com/" target="_blank">Kaggle</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skills Bridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Roadmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #D3D3D3, #F0E68C);
+            font-family: Arial, sans-serif;
+            color: #0A2E59;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #4682B4;
+            color: white;
+        }
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        .roadmap-step {
+            background-color: #FFF5EE;
+            border: 2px solid #FFB6C1;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .roadmap-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
+        }
+        .roadmap-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #4682B4;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Data Science Roadmap</h1>
+        <p>Your path to becoming a data scientist!</p>
+    </header>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h5>Python Programming</h5>
+            <p>Master Python for data analysis and modeling.</p>
+            <a href="https://www.learnpython.org/" target="_blank">Learn Python</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Data Wrangling</h5>
+            <p>Learn how to clean and manipulate data.</p>
+            <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html" target="_blank">Pandas Documentation</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Exploratory Data Analysis</h5>
+            <p>Perform EDA using visualization libraries.</p>
+            <a href="https://seaborn.pydata.org/tutorial.html" target="_blank">Seaborn Tutorial</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Machine Learning Fundamentals</h5>
+            <p>Understand ML concepts and algorithms.</p>
+            <a href="https://www.coursera.org/learn/machine-learning" target="_blank">Coursera ML Course</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Feature Engineering</h5>
+            <p>Learn techniques for improving model performance.</p>
+            <a href="https://towardsdatascience.com/feature-engineering-for-machine-learning-8b75e36c1cc0" target="_blank">Towards Data Science</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Model Evaluation and Deployment</h5>
+            <p>Evaluate models and learn about deployment strategies.</p>
+            <a href="https://www.ibm.com/cloud/learn/model-evaluation" target="_blank">IBM Cloud</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Capstone Project</h5>
+            <p>Work on a comprehensive project to showcase your skills.</p>
+            <a href="https://www.kaggle.com/" target="_blank">Kaggle</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skills Bridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>

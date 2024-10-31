@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Roadmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #FFE4E1, #FFC0CB);
+            font-family: Arial, sans-serif;
+            color: #0A2E59;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #4682B4;
+            color: white;
+        }
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        .roadmap-step {
+            background-color: #FFF5EE;
+            border: 2px solid #FFB6C1;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .roadmap-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
+        }
+        .roadmap-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #4682B4;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Graphic Design Roadmap</h1>
+        <p>Your journey to becoming a graphic designer!</p>
+    </header>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h5>Design Principles</h5>
+            <p>Learn the fundamental principles of design.</p>
+            <a href="https://www.canva.com/learn/design-basics/" target="_blank">Design Basics</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Color Theory</h5>
+            <p>Understand how to use colors effectively.</p>
+            <a href="https://www.colormatters.com/color-and-design" target="_blank">Color Matters</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Typography</h5>
+            <p>Learn the art of typography and fonts.</p>
+            <a href="https://www.creativebloq.com/inspiration/a-beginners-guide-to-typography" target="_blank">Typography Guide</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Design Software</h5>
+            <p>Get familiar with tools like Adobe Photoshop and Illustrator.</p>
+            <a href="https://helpx.adobe.com/learn.html" target="_blank">Adobe Tutorials</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Portfolio Development</h5>
+            <p>Create a portfolio to showcase your work.</p>
+            <a href="https://www.canva.com/learn/portfolio-ideas/" target="_blank">Portfolio Ideas</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Client Management</h5>
+            <p>Learn how to work with clients and manage projects.</p>
+            <a href="https://www.smartsheet.com/content/project-management-basics" target="_blank">Project Management</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Capstone Project</h5>
+            <p>Create a comprehensive design project.</p>
+            <a href="https://www.behance.net/" target="_blank">Behance Portfolio</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skills Bridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Roadmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #87CEFA, #E0FFFF);
+            font-family: Arial, sans-serif;
+            color: #0A2E59;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #4682B4;
+            color: white;
+        }
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        .roadmap-step {
+            background-color: #F0F8FF;
+            border: 2px solid #B0E0E6;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 139, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .roadmap-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 139, 0.2);
+        }
+        .roadmap-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #4682B4;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .cloud {
+            position: absolute;
+            background: #E0FFFF;
+            width: 150px;
+            height: 60px;
+            border-radius: 50px;
+            opacity: 0.7;
+            animation: moveClouds 15s linear infinite;
+        }
+        .cloud::before, .cloud::after {
+            content: '';
+            position: absolute;
+            background: #E0FFFF;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            top: -20px;
+            left: 10px;
+        }
+        .cloud::after {
+            width: 70px;
+            height: 70px;
+            top: 0;
+            left: auto;
+            right: 10px;
+        }
+        .cloud1 {
+            top: 10%;
+            left: -20%;
+            animation-delay: 0s;
+        }
+        .cloud2 {
+            top: 30%;
+            left: 80%;
+            animation-delay: 5s;
+        }
+        .cloud3 {
+            top: 60%;
+            left: -25%;
+            animation-delay: 10s;
+        }
+        @keyframes moveClouds {
+            0% { transform: translateX(-50px); }
+            100% { transform: translateX(100vw); }
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>C Programming Roadmap</h1>
+        <p>Start your journey to mastering C programming!</p>
+    </header>
+
+    <!-- Animated Clouds -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h5>Learn C Basics</h5>
+            <p>Understand variables, data types, and control structures.</p>
+            <a href="https://www.learn-c.org/" target="_blank">Learn C</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Control Structures</h5>
+            <p>Learn about loops, conditionals, and switch statements.</p>
+            <a href="https://www.tutorialspoint.com/c_standard_library/c_functions.htm" target="_blank">TutorialsPoint</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Functions</h5>
+            <p>Understand function declaration, definition, and recursion.</p>
+            <a href="https://www.geeksforgeeks.org/c-functions/" target="_blank">GeeksforGeeks</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Pointers and Arrays</h5>
+            <p>Learn about memory management and array manipulation.</p>
+            <a href="https://www.cprogramming.com/tutorial/c/lesson6.html" target="_blank">CProgramming</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Structs and Unions</h5>
+            <p>Understand complex data types and memory usage.</p>
+            <a href="https://www.tutorialspoint.com/c_standard_library/c_structs.htm" target="_blank">TutorialsPoint</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>File Handling</h5>
+            <p>Learn how to read from and write to files in C.</p>
+            <a href="https://search.app/4Rh1UZH73BveB1Ky9" target="_blank">Learn C</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Dynamic Memory Allocation</h5>
+            <p>Explore memory management using malloc and free.</p>
+            <a href="https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-2/" target="_blank">GeeksforGeeks</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Advanced Topics</h5>
+            <p>Dive into advanced concepts like multithreading and networking.</p>
+            <a href="https://www.tutorialspoint.com/c_standard_library/c_multithreading.htm" target="_blank">TutorialsPoint</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skills Bridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

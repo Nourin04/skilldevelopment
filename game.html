@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Development Roadmap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #F5F5DC, #FFDEAD);
+            font-family: Arial, sans-serif;
+            color: #0A2E59;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            background: #4682B4;
+            color: white;
+        }
+        .roadmap-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        .roadmap-step {
+            background-color: #FFF5EE;
+            border: 2px solid #FFB6C1;
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .roadmap-step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
+        }
+        .roadmap-step::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 60px;
+            background-color: #4682B4;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .roadmap-step:last-child::after {
+            display: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4682B4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Game Development Roadmap</h1>
+        <p>Your path to creating amazing games!</p>
+    </header>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h5>Programming Fundamentals</h5>
+            <p>Learn programming basics with C# or C++.</p>
+            <a href="https://www.learncpp.com/" target="_blank">Learn C++</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Game Design Principles</h5>
+            <p>Understand game mechanics and storytelling.</p>
+            <a href="https://www.gamedesigning.org/learn/game-design-101/" target="_blank">Game Designing</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Game Engines</h5>
+            <p>Explore popular engines like Unity and Unreal Engine.</p>
+            <a href="https://unity.com/learn" target="_blank">Unity Learn</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>2D and 3D Art Basics</h5>
+            <p>Learn basics of game art and animations.</p>
+            <a href="https://www.blender.org/support/tutorials/" target="_blank">Blender Tutorials</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Sound Design</h5>
+            <p>Understand the role of sound in games.</p>
+            <a href="https://www.audiomicro.com/learn/sound-design" target="_blank">Sound Design Basics</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Game Testing</h5>
+            <p>Learn about game testing methodologies.</p>
+            <a href="https://www.gamasutra.com/blogs/SimonOlivier/20170216/291743/10_Tips_for_Game_Testing.php" target="_blank">Gamasutra</a>
+        </div>
+        <div class="roadmap-step">
+            <h5>Capstone Project</h5>
+            <p>Create your own game to showcase your skills.</p>
+            <a href="https://www.unrealengine.com/en-US/onlinelearning-courses" target="_blank">Unreal Engine Courses</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Skills Bridge. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
